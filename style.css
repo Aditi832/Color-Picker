@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.heading {
+    margin-top: 20px;
+}
+
+.color-picker-container {
+    text-align: center;
+}
+
+#colorPicker {
+    cursor: pointer;
+    padding: 15px;
+    margin: 20px;
+}
+
+#colorValue {
+    font-size: 2rem;
+    margin: 10px;
+    color: #333;
+}
+
+/* Swatch Wheel Styling */
+.circle-container {
+    position: relative;
+    width: 300px; 
+    height: 300px;
+    border-radius: 200%;
+    margin: 20px auto;
+}
+
+.swatch-wheel {
+    position: relative;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 260px;
+    height: 200px;
+    border-radius: 1000%;
+    animation: rotate 10s infinite linear;
+}
+
+.swatch {
+    width: 40px;
+    height: 55px;
+    margin: 2px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: transform 0.0s ease;
+}
+
+.swatch:hover {
+    transform: scale(1.1);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #colorValue {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #colorValue {
+        font-size: 1rem;
+    }
+}
+
+/* RGB Composition Display Styling */
+#rgbComposition {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Accessibility Features */
+#manualColorInput {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+/* Clipboard Button Styling */
+#copyButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Heading Styling */
+.heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Dynamic Heading Styling */
+.heading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    transition: color 0.3s ease; 
+}
+
+hr {
+    width: 80%; 
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, #333, transparent);
+    margin: 10px auto; 
+}
+

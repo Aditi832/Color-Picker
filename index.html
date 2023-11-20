@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Picker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Page Heading -->
+<h2 class="heading">Color Picker</h2>
+<!-- Horizontal Rule to separate heading -->
+<hr> 
+
+<div class="color-picker-container">
+    <input type="color" id="colorPicker">
+    <h1 id="colorValue">#ffffff</h1> <br>
+    <!-- Color Swatches Section -->
+    <div class="circle-container">
+    <div class="swatch-wheel">
+      <!-- Primary colors -->
+      <div class="swatch" style="background-color: #ff0000;" data-color="#ff0000"></div>
+      <div class="swatch" style="background-color: #00ff00;" data-color="#00ff00"></div>
+      <div class="swatch" style="background-color: #0000ff;" data-color="#0000ff"></div>
+      <!-- Secondary colors -->
+      <div class="swatch" style="background-color: #00ffff;" data-color="#00ffff"></div>
+      <div class="swatch" style="background-color: #ff00ff;" data-color="#ff00ff"></div>
+      <div class="swatch" style="background-color: #ffff00;" data-color="#ffff00"></div>
+      <!-- Tertiary colors -->
+      <div class="swatch" style="background-color: #c0c0c0;" data-color="#c0c0c0"></div>
+      <div class="swatch" style="background-color: #808080;" data-color="#808080"></div>
+      <div class="swatch" style="background-color: #800000;" data-color="#800000"></div>
+      <div class="swatch" style="background-color: #808000;" data-color="#808000"></div>
+      <div class="swatch" style="background-color: #008000;" data-color="#008000"></div>
+      <div class="swatch" style="background-color: #800080;" data-color="#800080"></div>
+      <div class="swatch" style="background-color: #008080;" data-color="#008080"></div>
+      <div class="swatch" style="background-color: #000080;" data-color="#000080"></div>
+    </div></div>
+</div>
+    <!-- Clipboard Functionality -->
+    <button id="copyButton">Copy Color</button>
+    <!-- Accessibility Features -->
+    <input type="text" id="manualColorInput" placeholder="Enter color code">
+    <!-- RGB Composition Display -->
+    <div id="rgbComposition">RGB(255, 255, 255)</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
