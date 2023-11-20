@@ -20,6 +20,7 @@ A simple, interactive web-based color picker that allows users to select a color
 
 ## Preview
 
+<img width="1440" alt="Screenshot 2023-11-21 at 02 52 18" src="https://github.com/Aditi832/Color-Picker/assets/79759965/765bc03d-e30f-45f7-b5f1-2d28b2f43b7a">
 
 ## Technologies Used
 
